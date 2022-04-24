@@ -9,14 +9,7 @@ import Services from "./Services";
 function Home() {
   return (
     <>
-      <Container
-        fluid="false"
-        style={{
-          marginTop: "10px",
-          borderTop: "4px solid black",
-          borderBottom: "4px solid black",
-        }}
-      >
+      <Container fluid="flase" style={{ padding: "30px 0" }}>
         <Carousel
           variant="dark"
           fade

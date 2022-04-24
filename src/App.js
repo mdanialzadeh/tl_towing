@@ -8,12 +8,21 @@ import Footer from "./Footer";
 import Towing from "./Towing";
 import RoadSide from "./RoadSide";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import bg from "./assets/fiber.png";
 
 function App() {
   return (
     <Router>
       <Nav />
-      <div className="App">
+      <div
+        className="App"
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Towing" element={<Towing />} />

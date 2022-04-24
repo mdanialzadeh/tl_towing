@@ -11,7 +11,7 @@ function Footer() {
     <Container
       className="foot"
       fluid
-      style={{ background: "rgb(51 51 51)", padding: "1rem 0" }}
+      style={{ background: "rgb(0 0 0)", padding: "1rem 0" }}
     >
       <Container>
         <Row
