@@ -62,15 +62,6 @@ function Navtop() {
               <Nav.Item>
                 <Nav.Link href="/">Home</Nav.Link>
               </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="/Towing">Towing</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="/RoadSide">Road Side Assistance</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="/Transport">Private Transport</Nav.Link>
-              </Nav.Item>
               <NavDropdown title="Services" id="nav-dropdown">
                 <NavDropdown.Item eventKey="4.1">
                   Roadside Assistance
@@ -95,7 +86,16 @@ function Navtop() {
                 <NavDropdown.Item eventKey="4.4">
                   Illegally Parked Towing
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown>{" "}
+              <Nav.Item>
+                <Nav.Link href="/Towing">Towing</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="/RoadSide">Road Side Assistance</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="/Transport">Private Transport</Nav.Link>
+              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
         </Container>
