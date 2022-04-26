@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
+
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Figure from "react-bootstrap/Figure";
 import Logo from "./assets/image.PNG";
@@ -19,6 +19,7 @@ function Navtop() {
           </a>
         </h6>
       </Container>
+      <div style={{ width: "100%", height: "10px", background: "black" }}></div>
       <Container>
         <div className="topheader">
           <Figure>
@@ -31,7 +32,7 @@ function Navtop() {
           </Figure>
           <div className="hours">
             <h6>Available 24/7</h6>
-            <h6>Have an Emergency or need some help?</h6>
+            <h6>Have an Emergency?</h6>
             <h6>
               call us at
               <a href="tel:+15555555555"> 555-555-5555</a>
@@ -94,7 +95,7 @@ function Navtop() {
                 <Nav.Link href="/RoadSide">Road Side Assistance</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/Transport">Private Transport</Nav.Link>
+                <Nav.Link href="/Contact">Contact Us</Nav.Link>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>

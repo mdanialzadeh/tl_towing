@@ -15,10 +15,6 @@ function Services() {
     <div
       style={{
         padding: "0 0 6em 0",
-        backdropFilter: "blur(2px)",
-        borderBottom: "1px solid rgb(124, 0, 0)",
-        background:
-          "linear-gradient(rgb(0 0 0), rgb(0 0 0 / 90%), rgb(0 0 0 / 70%), rgb(0 0 0 / 70%), rgb(0 0 0 / 60%),rgb(0 0 0 / 60%),rgb(0 0 0 / 60%),rgb(0 0 0 / 60%),rgb(0 0 0 / 60%))",
       }}
     >
       <div
