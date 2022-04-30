@@ -4,12 +4,19 @@ import Pic1 from "./assets/pic1.png";
 import Pic2 from "./assets/pic2.png";
 import Pic3 from "./assets/pic3.png";
 import Container from "react-bootstrap/Container";
-import Services from "./Services";
 
 function Home() {
   return (
-    <>
-      <Container fluid="flase" style={{ padding: "30px 0" }}>
+    <div>
+      <Container
+        fluid="flase"
+        style={{
+          padding: "40px 0",
+          background: "rgb(2,0,36)",
+          background:
+            "linear-gradient(180deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.9) 100%)",
+        }}
+      >
         <Carousel
           variant="dark"
           fade
@@ -17,7 +24,7 @@ function Home() {
           indicators={false}
           interval={4000}
         >
-          <Carousel.Item style={{}}>
+          <Carousel.Item>
             <img className="d-block w-100" src={Pic1} alt="" />
           </Carousel.Item>
           <Carousel.Item>
@@ -28,9 +35,7 @@ function Home() {
           </Carousel.Item>
         </Carousel>
       </Container>
-
-      <Services />
-    </>
+    </div>
   );
 }
 

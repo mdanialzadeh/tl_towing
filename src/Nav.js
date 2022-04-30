@@ -2,101 +2,149 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Figure from "react-bootstrap/Figure";
+import bg from "./assets/fibertop.png";
 import Logo from "./assets/image.PNG";
+import * as Scroll from "react-scroll";
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 
 function Navtop() {
   return (
     <>
-      <Container fluid="true" style={{ marginTop: "10px" }}>
-        <h6 className="centered">
-          For Emergency Service Call:
-          <a href="tel:+15555555555" style={{ color: "white" }}>
-            {" "}
-            555-555-5555
-          </a>
-        </h6>
+      <Container
+        fluid="true"
+        style={{
+          position: "fixed",
+          top: "0",
+          zIndex: "40",
+          width: "100%",
+        }}
+      >
+        <a href="tel:+19177976184" style={{ color: "white" }}>
+          <h6 className="centered">
+            For Emergency Service Call : 917-797-6184
+          </h6>
+        </a>
       </Container>
-      <div style={{ width: "100%", height: "10px", background: "black" }}></div>
-      <Container>
+
+      <Container
+        fluid
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="topheader">
-          <Figure>
-            <Figure.Image
-              width={150}
-              height={180}
-              alt="171x180"
-              src={Logo}
-            ></Figure.Image>
-          </Figure>
+          <div
+            style={{
+              backgroundImage: `url(${Logo})`,
+              height: "90%",
+              marginTop: "auto",
+              width: " clamp(200px, 30vw, 400px)",
+              backgroundSize: "100% 100%",
+            }}
+          ></div>
+
           <div className="hours">
             <h6>Available 24/7</h6>
             <h6>Have an Emergency?</h6>
             <h6>
               call us at
-              <a href="tel:+15555555555"> 555-555-5555</a>
+              <a href="tel:+19177976184"> 917-797-6184</a>
             </h6>
           </div>
         </div>
       </Container>
-      <Navbar
-        variant="dark"
-        bg="black"
-        expand="md"
-        sticky="top"
-        collapseOnSelect
-      >
-        <Container
-          fluid="xl"
-          style={{
-            backgroundColor: "black",
-          }}
-        >
-          <Navbar.Brand href="/">T & L Towing</Navbar.Brand>
-          <Navbar.Toggle />
+      <Navbar variant="dark" expand="sm" sticky="top" collapseOnSelect>
+        <Container fluid="xl" className="justify-content-end">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse
             id="responsive-navbar-nav"
-            className="justify-content-end"
+            className="justify-content-center"
           >
             <Nav>
-              <Nav.Item>
-                <Nav.Link href="/">Home</Nav.Link>
-              </Nav.Item>
-              <NavDropdown title="Services" id="nav-dropdown">
-                <NavDropdown.Item eventKey="4.1">
-                  Roadside Assistance
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item eventKey="4.2">
-                  24 Hour Emergency Towing
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item eventKey="4.3">
-                  Private Transports
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item eventKey="4.4">
-                  Collision Towing
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item eventKey="4.3">
-                  Blocked Driveways
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item eventKey="4.4">
-                  Illegally Parked Towing
-                </NavDropdown.Item>
-              </NavDropdown>{" "}
-              <Nav.Item>
-                <Nav.Link href="/Towing">Towing</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="/RoadSide">Road Side Assistance</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="/Contact">Contact Us</Nav.Link>
-              </Nav.Item>
+              <Link
+                to="Top"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={600}
+                offset={-300}
+                spyThrottle={500}
+                delay={0}
+                isDynamic={true}
+              >
+                <Nav.Link onclickactive={false} active={false} eventKey={1}>
+                  Home
+                </Nav.Link>
+              </Link>
+
+              <Link
+                to="About"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={600}
+                spyThrottle={500}
+                offset={-110}
+                isDynamic={true}
+              >
+                <Nav.Link onclickactive={false} active={false} eventKey={4}>
+                  About Us
+                </Nav.Link>
+              </Link>
+              <Link
+                to="Services"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={600}
+                spyThrottle={500}
+                offset={-110}
+                isDynamic={true}
+              >
+                <Nav.Link onclickactive={false} active={false} eventKey={2}>
+                  Services
+                </Nav.Link>
+              </Link>
+
+              <Link
+                to="Areas"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={600}
+                spyThrottle={500}
+                offset={-110}
+                isDynamic={true}
+              >
+                <Nav.Link onclickactive={false} active={false} eventKey={3}>
+                  Areas We Serve
+                </Nav.Link>
+              </Link>
+
+              <Link
+                to="Contact"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={600}
+                spyThrottle={500}
+                offset={-110}
+                isDynamic={true}
+              >
+                <Nav.Link onclickactive={false} active={false} eventKey={5}>
+                  Contact Us
+                </Nav.Link>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
