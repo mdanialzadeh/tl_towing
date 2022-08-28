@@ -36,7 +36,6 @@ function Servicesx() {
     <div
       style={{
         color: "white",
-        background: "rgb(2,0,36)",
         background:
           "linear-gradient(180deg, rgba(0,0,0,.85) 0%, rgba(0,0,0,.85) 100%)",
         padding: "2rem 0",

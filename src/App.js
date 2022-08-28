@@ -5,7 +5,6 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import Contact from "./Contactus";
 import Areas from "./Areas";
-import RoadSide from "./RoadSide";
 import { BrowserRouter as Router } from "react-router-dom";
 import bg from "./assets/fiber.png";
 import { Element, animateScroll as scroll } from "react-scroll";

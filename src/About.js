@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Logo from "./assets/image.PNG";
+import Logo from "./assets/logo.png";
 import { useSpring, animated } from "react-spring";
 
 function About() {
@@ -11,7 +11,6 @@ function About() {
     <div
       style={{
         color: "white",
-        background: "rgb(2,0,36)",
         background:
           "linear-gradient(180deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.85) 100%)",
         padding: "2rem 0",
@@ -56,7 +55,7 @@ function About() {
             </p>
           </Col>
         </Row>
-        <div style={{ textAlign: "", width: "90%", margin: "auto" }}>
+        <div style={{ textAlign: "center", width: "90%", margin: "auto" }}>
           We Accept all major insurances including but not limited to Geico,
           Allstate, and State Farm.{" "}
         </div>

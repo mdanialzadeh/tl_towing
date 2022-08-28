@@ -9,15 +9,18 @@ function Home() {
   return (
     <div>
       <Container
-        fluid="flase"
+        fluid="true"
         style={{
-          padding: "40px 0",
-          background: "rgb(2,0,36)",
+          padding: "2em 0",
           background:
             "linear-gradient(180deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.9) 100%)",
         }}
       >
         <Carousel
+          style={{
+            maxWidth: "2000px",
+            margin: "auto",
+          }}
           variant="dark"
           fade
           controls={false}

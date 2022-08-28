@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import bg from "./assets/fibertop.png";
-import Logo from "./assets/image.PNG";
+import Logo from "./assets/logo.png";
 import * as Scroll from "react-scroll";
 import {
   Link,
@@ -25,6 +25,7 @@ function Navtop() {
           top: "0",
           zIndex: "40",
           width: "100%",
+          height: "3rem",
         }}
       >
         <a href="tel:+19177976184" style={{ color: "white" }}>
@@ -37,6 +38,7 @@ function Navtop() {
       <Container
         fluid
         style={{
+          marginTop: "4rem",
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -46,9 +48,8 @@ function Navtop() {
           <div
             style={{
               backgroundImage: `url(${Logo})`,
-              height: "90%",
-              marginTop: "auto",
-              width: " clamp(200px, 30vw, 400px)",
+              height: "100%",
+              width: " clamp(180px, 20%, 400px)",
               backgroundSize: "100% 100%",
             }}
           ></div>

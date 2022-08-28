@@ -9,7 +9,7 @@ function Areas() {
     <div
       style={{
         color: "white",
-        background: "rgb(2,0,36)",
+
         background:
           "linear-gradient(180deg, rgba(0,0,0,.85) 0%, rgba(0,0,0,.85) 100%)",
         padding: "2rem 0",
@@ -56,7 +56,6 @@ function Areas() {
             {" "}
             <div
               style={{
-                border: "2px ridge white",
                 backgroundImage: `url(${Map})`,
                 height: " clamp(300px, 20vw, 300px)",
                 maxWidth: "400px",
